@@ -24,7 +24,7 @@ public class AutorService {
         return autorRepository.findById(id).orElse(null);
     }
 
-    public void deletarAutor(AutorModel autorModel) {
-        autorRepository.delete(autorModel);
+    public void deletarAutor(Long id) {
+        autorRepository.deleteById(id);
     }
 }
